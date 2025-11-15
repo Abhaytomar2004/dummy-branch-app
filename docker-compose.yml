@@ -22,6 +22,8 @@ services:
           memory: 256M
 
   api:
+    ports:
+      - "8000:8000"
     build: .
     env_file: ${ENV_FILE:-env.development}
     environment:
